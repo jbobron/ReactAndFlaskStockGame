@@ -2,7 +2,7 @@
   "name": "ultimate-flask-front-end",
   "version": "0.0.1",
   "authors": [
-    "Michael Herman <michael@realpython.com>"
+    "Jake Obron"
   ],
   "license": "MIT",
   "ignore": [
@@ -14,7 +14,8 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.2",
-    "jquery": "~2.1.3",
+    "jquery": "~2.1.4",
     "react": "~0.12.2"
-  }
+  },
+  "directory": "./project/static/bower_components"
 }

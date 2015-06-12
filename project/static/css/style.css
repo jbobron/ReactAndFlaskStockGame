@@ -1,12 +1,12 @@
 /* custom styles */
 
-.container {
+/*.container {
   text-align: center;
   padding-top: 50px;
   max-width: 300px;
-}
+}*/
 
-input{
+/*input{
   text-align: center;
   border: 5px solid;
   padding: 13px 12px;
@@ -18,4 +18,95 @@ input{
 ul{
   margin-left: 20px;
   text-align: left;
+}*/
+
+*{
+  border: 1px solid black;
 }
+html{
+  font-family: AlegreyaSans-Regular;
+  height:100%;
+}
+h1{
+  font-family: AlegreyaSans-Regular;
+  font-size: 48px;
+  color: #599FDF;
+  line-height: 57px; 
+}
+h2{
+  font-family: AlegreyaSans-Regular;
+  font-size: 24px;
+  color: #599FDF;
+  line-height: 57px; 
+}
+li{
+  font-family: AlegreyaSans-Regular;
+  font-size: 20px;
+  color: #599FDF;
+  line-height: 57px; 
+}
+p{
+  font-family: AlegreyaSans-Regular;
+  font-size: 14px;
+  color: #51D9C0;
+}
+th, td{
+  font-family: AlegreyaSans-Regular;
+  font-size: 12px;
+}
+th {
+  color: #51D9C0;
+  font-style: bold;
+}
+
+.sideBar {
+  background-color: #1A2C3D;
+  position: fixed;
+  min-height: 100%;
+}
+.content {
+  position: relative;
+  left: 18%;
+}
+
+.stats {
+
+}
+
+.searchAndGraph {
+  
+}
+.searchIndexPage{
+}
+.graphIndexPage {
+}
+
+.portfolio {
+
+}
+
+.searchForm {
+  width:50%;
+}
+.searchTicker {
+  margin:8px;
+  height:17px;
+  border: 0;
+  width: calc(100% - 2px);
+  margin-left:1px;
+  box-shadow: -8px 10px 0px -7px #ebebeb, 8px 10px 0px -7px #ebebeb;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+}
+
+.searchTicker:focus {
+  outline: none;
+  box-shadow: -8px 10px 0px -7px #51D9C0, 8px 10px 0px -7px #51D9C0;
+}
+
+
+
+
+
+
+
