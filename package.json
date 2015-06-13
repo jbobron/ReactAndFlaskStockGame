@@ -19,6 +19,7 @@
     "reactify": "^1.0.0"
   },
   "dependencies": {
-    "lumx": "^1.0.0"
+    "dc": "^2.0.0-beta.12"
+
   }
 }

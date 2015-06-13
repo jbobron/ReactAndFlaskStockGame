@@ -109,8 +109,17 @@ var SearchForGraph = React.createClass({displayName: "SearchForGraph",
       React.createElement("div", {className: "searchIndexPage col-md-6"}, 
         React.createElement("form", {className: "searchForm", action: "", method: "post"}, 
           React.createElement("input", {name: "ticker", type: "text", className: "searchTicker", id: "ticker", placeholder: "Enter Ticker..."})
-        )
-        
+        ), 
+        React.createElement("div", {className: "col-md-6"}, 
+          React.createElement("p", null, "Current Price"), 
+          React.createElement("p", null, "add props here")
+        ), 
+        React.createElement("div", {className: "col-md-6"}, 
+          React.createElement("p", null, "% change today"), 
+          React.createElement("p", null, "add props here")
+        ), 
+
+      React.createElement("button", null, "Trade")
       )
     );
   }
@@ -120,7 +129,7 @@ var Graph = React.createClass({displayName: "Graph",
   render: function() {
     return (
       React.createElement("div", {className: "graphIndexPage col-md-6"}, 
-      React.createElement("p", null, "Graph here")
+        React.createElement("div", {id: "open-chart"})
       )
     );
   }
@@ -191,6 +200,68 @@ var countries = [
   {"name": "Cambodia"}, {"name": "Iceland"}, {"name": "Dominican Republic"}, {"name": "Turkey"},
   {"name": "Spain"}, {"name": "Poland"}, {"name": "Haiti"}
 ];
+/*
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume",
+        "Ex-Dividend",
+        "Split Ratio",
+        "Adj. Open",
+        "Adj. High",
+        "Adj. Low",
+        "Adj. Close",
+        "Adj. Volume"
+*/
+var data = [
+        [
+            "2015-06-30",
+            28.47,
+            28.91,
+            28.27,
+            28.66,
+            25630702,
+            0,
+            1,
+            28.47,
+            28.91,
+            28.27,
+            28.66,
+            25630702
+        ],
+        [
+            "2015-05-31",
+            29.32,
+            29.59,
+            29.19,
+            29.33,
+            25217443,
+            0,
+            1,
+            29.32,
+            29.59,
+            29.19,
+            29.33,
+            25217443
+        ],
+        [
+            "2015-04-30",
+            28.85,
+            29.015,
+            28.68,
+            28.83,
+            26037228,
+            0,
+            1,
+            28.85,
+            29.015,
+            28.68,
+            28.83,
+            26037228
+        ]
+      ]
 
 React.render(
   React.createElement(App, null),

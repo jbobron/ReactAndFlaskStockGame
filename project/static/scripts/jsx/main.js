@@ -109,7 +109,16 @@ var SearchForGraph = React.createClass({
         <form className="searchForm" action="" method="post">
           <input name="ticker" type="text" className="searchTicker" id="ticker" placeholder="Enter Ticker..."/>
         </form>
-        
+        <div className="col-md-6">
+          <p>Current Price</p>
+          <p>add props here</p>
+        </div>
+        <div className="col-md-6">
+          <p>% change today</p>
+          <p>add props here</p>
+        </div>
+
+      <button>Trade</button>
       </div>
     );
   }
@@ -119,7 +128,7 @@ var Graph = React.createClass({
   render: function() {
     return (
       <div className="graphIndexPage col-md-6">
-      <p>Graph here</p>
+        <div id="open-chart"></div>
       </div>
     );
   }
@@ -190,6 +199,68 @@ var countries = [
   {"name": "Cambodia"}, {"name": "Iceland"}, {"name": "Dominican Republic"}, {"name": "Turkey"},
   {"name": "Spain"}, {"name": "Poland"}, {"name": "Haiti"}
 ];
+/*
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume",
+        "Ex-Dividend",
+        "Split Ratio",
+        "Adj. Open",
+        "Adj. High",
+        "Adj. Low",
+        "Adj. Close",
+        "Adj. Volume"
+*/
+var data = [
+        [
+            "2015-06-30",
+            28.47,
+            28.91,
+            28.27,
+            28.66,
+            25630702,
+            0,
+            1,
+            28.47,
+            28.91,
+            28.27,
+            28.66,
+            25630702
+        ],
+        [
+            "2015-05-31",
+            29.32,
+            29.59,
+            29.19,
+            29.33,
+            25217443,
+            0,
+            1,
+            29.32,
+            29.59,
+            29.19,
+            29.33,
+            25217443
+        ],
+        [
+            "2015-04-30",
+            28.85,
+            29.015,
+            28.68,
+            28.83,
+            26037228,
+            0,
+            1,
+            28.85,
+            29.015,
+            28.68,
+            28.83,
+            26037228
+        ]
+      ]
 
 React.render(
   <App />,

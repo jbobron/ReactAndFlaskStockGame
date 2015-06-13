@@ -104,6 +104,10 @@ th {
   box-shadow: -8px 10px 0px -7px #51D9C0, 8px 10px 0px -7px #51D9C0;
 }
 
+#open-chart .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-45deg);
+}
 
 
 
